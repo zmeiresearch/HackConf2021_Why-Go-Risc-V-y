@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="reveal.js/dist/reset.css">
     <link rel="stylesheet" href="reveal.js/dist/reveal.css">
-    <link rel="stylesheet" href="reveal.js/dist/theme/moon.css" id="theme">
+    <link rel="stylesheet" href="reveal.js/dist/theme/sky.css" id="theme">
 
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css">
@@ -51,12 +51,15 @@
                     <div class="r-hstack justify-center">
                         <img class="r-frame" style="background: rgba(255,255,255,0.1); opacity: 0.6" width="504"
                             height="378" data-src="Content/IV_Desk.jpg" alt="IV Desk">
-                            <div class="r-vstack"><img class="r-frame" style="background: rgba(255,255,255,0.1);" width="250" height="190"
-                                data-src="Content/Zmei_logo.png" alt="Zmei logo">
-                                          <a href="#" class="navigate-down">
-                                              <img class="r-frame" style="background: rgba(255,255,255,0.1);" width="89" height="119"
-                                                  data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
-                                          </a></div>
+                            <div class="r-vstack">
+                                <img class="r-frame" style="background: rgba(255,255,255,0.7);" width="250" height="140" 
+                                    data-src="Content/1024px-Experian_logo.png" alt="Experian Logo">
+                                <img class="r-frame" style="background: rgba(255,255,255,0.1);" width="250" height="190"
+                                    data-src="Content/Zmei_logo.png" alt="Zmei logo">
+                                <a href="#" class="navigate-down"><img class="r-frame" style="background: rgba(255,255,255,0.1);" width="89" height="119"
+                                    data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
+                                </a>
+                                </div>
                         
                     </div>
                 </section>
@@ -98,7 +101,7 @@
             </section>
 
             <section id="definitions">
-                <h2>Definitions and overview</h2>
+                <h2>Definitions</h2>
                 <br>
                 <ul class="justify-left">
                     <li class="fragment">Processor</li>
@@ -136,12 +139,15 @@
                         <img class="r-frame" style="background: rgba(255,255,255,0.1);" width="99" height="119"
                             data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
                     </a>
+                </section>
 
+                <section>
+                    <h2>RISC vs CISC</h2>
                 </section>
 
                 <section>
                     <h2>An ISA does not matter anymore!</h2>
-                    (...until it does)
+                    (...except when it does)
                     <br>
                     <a href="#/riscv_overview">
                         <img class="r-frame" style="background: rgba(255,255,255,0.1); transform: rotate(270deg);"
@@ -154,7 +160,6 @@
             <section id="riscv_overview">
                 <section id="riscv_overview_quote">
                     <h2>What is RISC-V</h2>
-                    <br>
                     A Free and Open ISA:
                     <blockquote
                         cite="https://docs.google.com/presentation/d/1jqmAgj-5iimymT6jZJSViEnIm3Dfgs7B-LWEdW90UjU/edit#slide=id.gd84137844f_2_565">
@@ -162,7 +167,6 @@
                         <p>...Enabling freedom of design across all domains and industries</p>
                         <p>...Cementing the strategic foundation of semiconductors&rdquo;</p>
                     </blockquote>
-                    <br>
                     <a href="#" class="navigate-down">
                         <img class="r-frame" style="background: rgba(255,255,255,0.1);" width="99" height="119"
                             data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
@@ -171,7 +175,6 @@
 
                 <section id="riscv_overview_details">
                     <h4>In a little bit more details:</h4>
-                    <br>
                     <ul class="justify-left">
                         <li class="fragment">A set of specifications</li>
                         <li class="fragment">... targeting 32, 64 and 128-bit processors</li>
@@ -186,8 +189,7 @@
                 </section>
 
                 <section id="riscv_overview_organization">
-                    <h4>But more importantly:</h4>
-                    <br>
+                    <h4>More importantly:</h4>
                     <ul class="justify-left">
                         <li>A vibrant open community</li>
                         <li>Backed by commercial vendors</li>
@@ -201,8 +203,8 @@
                 </section>
 
                 <section id="riscv_overview_products">
-                    <h4>...But also:</h4>
-                    A growing range of processors that you can actually buy and use today.
+                    <h4>...but also:</h4>
+                    A growing range of actual devices that you can buy and use today.
                     <br>
                     <a href="#/riscv_overview">
                         <img class="r-frame" style="background: rgba(255,255,255,0.1); transform: rotate(270deg);"
@@ -214,7 +216,7 @@
 
             <section id="riscv_implementation_fpga">
                 <h2>RISC-V Implementations: RTL/FPGA</h2>
-                <a href="https://github.com/riscvarchive/riscv-cores-list">RISC-V Foudation Github</a>lists over 100+
+                <a href="https://github.com/riscvarchive/riscv-cores-list">RISC-V Foudation Github</a> lists over 100+
                 implementation.
                 <b>Notable mentions:</b>
                 <ul class="justify-left">
@@ -229,7 +231,7 @@
 
             <section id="riscv_implementation_devices">
                 <h2>RISC-V Implementations: Devices</h2>
-                <a href="https://riscv.org/exchange/boards/">A number of companies offer physical devices as well:</a>
+                <a href="https://riscv.org/exchange/boards/">A number of companies offer physical devices:</a>
                 <ul class="justify-left">
                     <li>SiFive</li>
                     <li>NXP</li>
@@ -267,7 +269,7 @@
 
             <section id="random_facts">
                 <section>
-                    <h2></h2>
+                    <h2>Random facts:</h2>
                     <p class="fragment"></p>I've used RISC-V cores in two (semi)commercial products already and love it</p>
                     <p class="fragment">There are open-source projects like <a href="https://symbiflow.github.io/">SymbiFlow</a> 
                         that enable an end-to-end open toolset, when targeting FPGAs like ones from <a href="https://www.latticesemi.com/">Lattice Semiconductor</a></p>
@@ -279,147 +281,31 @@
                     Anecdotal evidence is a design on 130nm process with ~1.5m transistors can be manufactured for less than 100k used.
                     And moving to 180nm (Pentium III-era process) - for less than 10k USD
                 </section>
+                
+                <section id="presentation_availability">
+                    <h2>Predictions:</h2>
+                    <ul>
+                        <li>In 10 years, RISC-V will be the preferred platform for smart/IoT devices</li>
+                        <li>In 5 years, a hyperscaler will create a high-performance RISC-V chip, rivaling best ones from Intel, AMD, IBM and ARM. My bet - <b>Microsoft</b></li>
+                    </ul>
+                </section>
+
                 <section id="apple_interest">
-                    <h2>Random facts:</h2>
-                    Apple potentially may use RISC-V as well
+                    <h2>Predictions:</h2>
+                    Apple has some interest too:
+                    <br>
                     <img class="r-frame" style="background: rgba(255,255,255,0.1); opacity: 0.9" width="500"
                                 height="365" data-src="Content/Apple_job_ad.png" alt="Apple job ad">
                 </section>
-                <section id="presentation_availability">
-                    <h2>Random facts:</h2>
-                    This presentation has been created using open-source tools only and is open-sourced as well:
-                    <a href="https://github.com/zmeiresearch/HackConf2021_Why-Go-Risc-V-y">HackConf2021_Why-Go-Risc-V-y</a>
-                </section>
+            
             </section>
 
             <section>
                 <h2>Thanks!</h2>
+
+                <small>This presentation has been created using open-source tools only and is available in full under CC BY 4.0 license @ :
+                    <a href="https://github.com/zmeiresearch/HackConf2021_Why-Go-Risc-V-y">HackConf2021_Why-Go-Risc-V-y</a></small>
             </section>
-
-
-            <!--<a href="#" class="navigate-down">
-                    <img class="r-frame" style="background: rgba(255,255,255,0.1);" width="99" height="119" data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
-            </a>
-
-                <br>
-                        <a href="#/riscv_overview">
-							<img class="r-frame" style="background: rgba(255,255,255,0.1); transform: rotate(270deg);" width="99" height="118" data-src="https://static.slid.es/reveal/arrow.png" alt="Right arrow">
-						</a>
-
-
-
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							</tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">The nice thing about standards is that there are so many to choose from</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://revealjs.com/speaker-view/">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://revealjs.com/pdf-export/">exported to PDF</a>, here's an example:</p>
-					<iframe data-src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.on( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
-
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://revealjs.com/api/">Extensive JavaScript API</a></li>
-						<li><a href="https://revealjs.com/auto-slide/">Auto-progression</a></li>
-						<li><a href="https://revealjs.com/backgrounds/#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://revealjs.com/keyboard/">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
-
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="https://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
-				</section>-->
-
         </div>
 
     </div>
